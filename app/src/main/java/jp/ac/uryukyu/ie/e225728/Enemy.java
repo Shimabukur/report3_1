@@ -14,30 +14,59 @@ public class Enemy {
     private int attack;
     private boolean dead;
 
+    /**
+     * モンスター名を返すゲッターメソッド。
+     * @return 指定されたStringフィールドの値
+     */
     public String getName(){
         return this.name;
     }
 
+    /**
+     * モンスターのHPを返すゲッターメソッド。
+     * @return 指定されたintフィールドの値
+     */
     public int getHitPoint(){
         return this.hitPoint;
     }
 
+    /**
+     * モンスターの攻撃力を返すゲッターメソッド。
+     * @return 指定されたintフィールドの値
+     */
     public int getAttack(){
         return this.attack;
     }
 
+     /**
+     * モンスターの死亡判定を返すゲッターメソッド。
+     * @return 指定されたbooleanフィールドの値
+     */
     public boolean isDead(){
         return this.dead;
     }
 
+
+    /**
+     * モンスター名を設定するセッターメソッド。
+     * @param _name String型変数nameに代入する値
+     */    
     public void setName(String _name){
         this.name = _name;
     }
 
+    /**
+     * モンスターのHPを設定するセッターメソッド。
+     * @param _hitPoint int型変数hitPointに代入する値
+     */    
     public void setHitPoint(int _hitPoint){
         this.hitPoint = _hitPoint;
     }
 
+    /**
+     * モンスターの攻撃力を設定するセッターメソッド。
+     * @param _attack int型変数attackに代入する値
+     */
     public void setAttack(int _attack){
         this.attack = _attack;
     }
